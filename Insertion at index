@@ -1,5 +1,3 @@
-package Asst_15prog;
-
 import java.util.Scanner;
 
 public class InsertionIndex {
