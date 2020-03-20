@@ -1,0 +1,27 @@
+import java.util.Scanner;
+ import java.util.InputMismatchException;
+ 	 public class AbsoulteDiff {
+	   public static void main(String[] args) {
+       
+	      // get some integers to find their absolute values   
+	      try{
+	      System.out.println("enter  input numbers:");
+	      Scanner sc=new Scanner(System.in); 
+	       int x=sc.nextInt();
+	      int y=sc.nextInt();
+	      
+	      if(x>0 && y>0){
+	      int c=x-y;
+	     int a=Math.abs(c);
+	      System.out.println(" Difference is:"+a);
+	      }
+	      else if(x<0||y<0){
+	          System.out.println("ERROR!");
+	      }
+	      
+	      }catch(InputMismatchException e){
+	          System.out.println("ERROR! ONLLY NUMBERS");
+	      }
+  }
+}
+
