@@ -1,0 +1,40 @@
+package Asst_15prog;
+
+public class LargeNumber {
+
+	final static int R = 5; 
+    final static int  C = 5; 
+    // Function to find max element 
+    // mat[][] : 2D array to find max element 
+    static int findMax(int mat[][]) 
+    { 
+        // Initializing max element as INT_MIN 
+        int maxElement = Integer.MIN_VALUE; 
+        // checking each element of matrix 
+        // if it is greater than maxElement, 
+        // update maxElement 
+        for (int i = 0; i < R; i++) { 
+            for (int j = 0; j < C; j++) { 
+                if (mat[i][j] > maxElement) { 
+                    maxElement = mat[i][j]; 
+                } 
+            } 
+        } 
+        // finally return maxElement 
+        return maxElement; 
+    }  
+    // Driver code 
+    public static void main(String args[]) 
+    { 
+           // matrix 
+        int mat[][] = { { 1,24,3,5,14 }, 
+                          { 21,25,15,10,19 }, 
+                          { 9,2,4,17,20}, 
+                          { 18,23,6,8,11 }, 
+                          {7,12,13,16,22}
+                          
+        			 }; 
+        System.out.println("Largest Number of Matrix is " +findMax(mat)) ; 
+    } 
+    
+}
